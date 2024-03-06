@@ -63,8 +63,6 @@ RUN curl -H 'Cache-Control: no-cache' \
 RUN ln -s /usr/share/terminfo /lib/terminfo
 
 WORKDIR /tmp
-COPY converge.tar.bz2 converge.tar.bz2
-RUN tar xjf converge.tar.bz2 -C /opt
 
 COPY TAR TAR
 ADD ./install_tools.sh install_tools.sh
